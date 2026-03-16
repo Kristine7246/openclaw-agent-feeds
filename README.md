@@ -1,12 +1,9 @@
 # OpenClaw Agent Feeds (龍蝦升級飼料包)
 
-歡迎來到 OpenClaw 專業 AI 代理升級模組庫。
-
-### 📄 檔案連結 / Documentation Links
+歡迎來到 OpenClaw AI Agents 升級模組庫
 
 - **[繁體中文介紹 (Traditional Chinese)](README.zh-TW.md)**
 - **[English Description](README.en.md)**
-- **[授權條款 (MIT License)](LICENSE)**
 
 ---
 
@@ -16,6 +13,8 @@
 Lobster Feeds are high-level prompt templates designed for OpenClaw, aimed at enhancing AI Agent capabilities with ease of use through instant messaging.
 
 ---
+
+**[授權條款 (MIT License)](LICENSE)**
 
 ### ☕️ 支持此專案 / Support
 
