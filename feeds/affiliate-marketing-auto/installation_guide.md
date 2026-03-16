@@ -1,11 +1,42 @@
 # 🛠 安裝指令 (Feed Prompt)
 
-請將以下指令發送給代理，啟動「超級行銷代理模式」。
+“請不要直接修改你的工作區檔案，先輸出提案供我審核。
+
+任務：
+將以下內容拆分為兩部分：
+
+1. AGENTS.md 片段
+- 只保留長期有效的路由規則、品質原則、禁止事項
+- 內容需精簡、可長期維護
+- 不要放一次性寫作細節
+
+2. SKILL.md
+- 技能名稱：affiliate_marketing_auto
+- 請重構為可重用的 OpenClaw skill
+- 需包含：
+  - Title
+  - Purpose
+  - When to use
+  - Required inputs
+  - Workflow
+  - Constraints
+  - Output format
+  - Self-check checklist
+  - Failure modes
+
+規則：
+- 不要原樣照抄
+- 要補足缺失的執行流程與驗證邏輯
+- 若原規則有機械化、容易產生 AI 味的部分，請主動修正
+
+以下是原始內容：”
+
+
 
 ---
 
 ```xml
-<lobster_upgrade_module id="affiliate_auto_v1">
+
     <campaign_logic>
         1. 產品掃描：提取核心賣點 (USP) 與價格優勢。
         2. 受眾畫像 (Avatar)：定義出最核心的 3 個購買群體。
@@ -26,12 +57,12 @@
     <motto>
         "不只是賣產品，更是提供解決方案。"
     </motto>
-</lobster_upgrade_module>
+
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **轉化率 (CR)**：顯著提升，文案更具煽動性與信任度。
-*   **內容產量**：一人即可營運上百個產品的推廣矩陣。
-*   **品牌一致性**：確保所有推廣資料具備統一的品牌調性。
+*   **運作模式**：遵循 OpenClaw 標準化技能架構。
+*   **溝通模式**：優先提案審核制，確保工作區安全。
+*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。

@@ -1,11 +1,42 @@
 # 🛠 安裝指令 (Feed Prompt)
 
-請將以下指令發送給具備 Function Calling 能力的代理，即可啟動「狀態機模式」。
+“請不要直接修改你的工作區檔案，先輸出提案供我審核。
+
+任務：
+將以下內容拆分為兩部分：
+
+1. AGENTS.md 片段
+- 只保留長期有效的路由規則、品質原則、禁止事項
+- 內容需精簡、可長期維護
+- 不要放一次性寫作細節
+
+2. SKILL.md
+- 技能名稱：tool_driven_state
+- 請重構為可重用的 OpenClaw skill
+- 需包含：
+  - Title
+  - Purpose
+  - When to use
+  - Required inputs
+  - Workflow
+  - Constraints
+  - Output format
+  - Self-check checklist
+  - Failure modes
+
+規則：
+- 不要原樣照抄
+- 要補足缺失的執行流程與驗證邏輯
+- 若原規則有機械化、容易產生 AI 味的部分，請主動修正
+
+以下是原始內容：”
+
+
 
 ---
 
 ```xml
-<lobster_upgrade_module id="state_machine_runner_v1">
+
     <fsm_logic>
         CURRENT_STATE: [IDLE]
         
@@ -28,12 +59,12 @@
         2. 每一步輸出必須包含：[CURR_STATE] -> [NEXT_STATE_EXPECTED]。
         3. 當進入 [ABORT] 狀態時，必須產出完整的故障排除報告。
     </operational_constraints>
-</lobster_upgrade_module>
+
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **流程可預測性**：代理的行為變得像程式一樣可以被預期。
-*   **容錯率**：具備自動錯誤處理邏輯，減少「死循環」發生。
-*   **複雜工程能力**：能夠處理長達 20 步以上的連續工具調用任務。
+*   **運作模式**：遵循 OpenClaw 標準化技能架構。
+*   **溝通模式**：優先提案審核制，確保工作區安全。
+*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。

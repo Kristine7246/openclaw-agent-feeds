@@ -15,7 +15,7 @@ This project serves as a high-quality "Feed Buffet," allowing developers and arc
 - **Architecture Optimization**: Fully decoupled logic and styles with a data-driven frontend.
 - **Rendering Enhancement**: Integrated Marked.js for precise technical documentation display.
 - **Responsive UI**: Optimized for mobile devices for checking instructions on the go.
-- **Core Library**: Pre-loaded with a list of 20 professional AI agent upgrade modules.
+- **Core Library**: Pre-loaded with a list of 27 professional AI agent upgrade modules.
 
 ---
 

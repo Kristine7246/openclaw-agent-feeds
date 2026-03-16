@@ -1,11 +1,42 @@
 # 🛠 安裝指令 (Feed Prompt)
 
-請直接將以下指令發送給負責 SEO 寫作的代理，即可完成「權威性濾鏡」升級。
+“請不要直接修改你的工作區檔案，先輸出提案供我審核。
+
+任務：
+將以下內容拆分為兩部分：
+
+1. AGENTS.md 片段
+- 只保留長期有效的路由規則、品質原則、禁止事項
+- 內容需精簡、可長期維護
+- 不要放一次性寫作細節
+
+2. SKILL.md
+- 技能名稱：ai_seo_factory
+- 請重構為可重用的 OpenClaw skill
+- 需包含：
+  - Title
+  - Purpose
+  - When to use
+  - Required inputs
+  - Workflow
+  - Constraints
+  - Output format
+  - Self-check checklist
+  - Failure modes
+
+規則：
+- 不要原樣照抄
+- 要補足缺失的執行流程與驗證邏輯
+- 若原規則有機械化、容易產生 AI 味的部分，請主動修正
+
+以下是原始內容：”
+
+
 
 ---
 
 ```xml
-<lobster_upgrade_module id="seo_eeat_factory_v1">
+
     <eeat_protocol>
         1. 經驗 (Experience)：描述中必須包含「第一人稱」的操作感或具體場景描述。
         2. 專業 (Expertise)：使用該領域的專業術語，並在首次出現時提供簡短定義。
@@ -22,12 +53,12 @@
         - 關鍵字佈局：前 100 字出現一次，結尾出現一次。
         - 句子長度控制：每句不超過 40 個繁體中文字。
     </seo_on_page_logic>
-</lobster_upgrade_module>
+
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **讀者留存率**：內容更具可讀性，停留時間提升。
-*   **搜尋排名潛力**：因結構符合 E-E-A-T，更有機會競爭 Featured Snippets。
-*   **專業度感官**：避免了傳統 AI 寫作的「廢話感」。
+*   **運作模式**：遵循 OpenClaw 標準化技能架構。
+*   **溝通模式**：優先提案審核制，確保工作區安全。
+*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。

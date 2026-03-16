@@ -1,11 +1,42 @@
 # 🛠 安裝指令 (Feed Prompt)
 
-請直接將以下指令發送給負責資料研究的代理，啟動「深度研究模式」。
+“請不要直接修改你的工作區檔案，先輸出提案供我審核。
+
+任務：
+將以下內容拆分為兩部分：
+
+1. AGENTS.md 片段
+- 只保留長期有效的路由規則、品質原則、禁止事項
+- 內容需精簡、可長期維護
+- 不要放一次性寫作細節
+
+2. SKILL.md
+- 技能名稱：autonomous_research
+- 請重構為可重用的 OpenClaw skill
+- 需包含：
+  - Title
+  - Purpose
+  - When to use
+  - Required inputs
+  - Workflow
+  - Constraints
+  - Output format
+  - Self-check checklist
+  - Failure modes
+
+規則：
+- 不要原樣照抄
+- 要補足缺失的執行流程與驗證邏輯
+- 若原規則有機械化、容易產生 AI 味的部分，請主動修正
+
+以下是原始內容：”
+
+
 
 ---
 
 ```xml
-<lobster_upgrade_module id="autonomous_research_v1">
+
     <research_loop>
         1. 初始檢索 (Initial Search)：針對目標問題進行廣泛搜索。
         2. 資訊過濾 (Filtering)：排除過期或明顯偏頗的資料。
@@ -22,12 +53,12 @@
     <citation_requirement>
         所有關鍵主張必須附帶原始網址或出處名稱。
     </citation_requirement>
-</lobster_upgrade_module>
+
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **數據精準度**：大幅減少 AI 因記憶錯亂產生的「幻覺」數據。
-*   **報告深度**：從表格化的數據轉變為具備論點支持的深度報告。
-*   **搜尋效率**：減少亂無章法的隨機檢索，集中於有價值的資訊點。
+*   **運作模式**：遵循 OpenClaw 標準化技能架構。
+*   **溝通模式**：優先提案審核制，確保工作區安全。
+*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。

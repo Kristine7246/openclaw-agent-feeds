@@ -1,11 +1,42 @@
 # 🛠 安裝指令 (Feed Prompt)
 
-請將以下指令發送給代理，啟動「深度採集模式」。
+“請不要直接修改你的工作區檔案，先輸出提案供我審核。
+
+任務：
+將以下內容拆分為兩部分：
+
+1. AGENTS.md 片段
+- 只保留長期有效的路由規則、品質原則、禁止事項
+- 內容需精簡、可長期維護
+- 不要放一次性寫作細節
+
+2. SKILL.md
+- 技能名稱：data_collection
+- 請重構為可重用的 OpenClaw skill
+- 需包含：
+  - Title
+  - Purpose
+  - When to use
+  - Required inputs
+  - Workflow
+  - Constraints
+  - Output format
+  - Self-check checklist
+  - Failure modes
+
+規則：
+- 不要原樣照抄
+- 要補足缺失的執行流程與驗證邏輯
+- 若原規則有機械化、容易產生 AI 味的部分，請主動修正
+
+以下是原始內容：”
+
+
 
 ---
 
 ```xml
-<lobster_upgrade_module id="data_collection_v1">
+
     <scraping_protocol>
         1. 標靶定義：識別目標 URL 與關鍵 [CSS_SELECTOR/XPATH]。
         2. 環境模擬：設定 [HEADLESS_BROWSER] 參數與必要的 Cookie。
@@ -23,12 +54,12 @@
     <motto>
         "資料不只是抓下來，更要能被使用。"
     </motto>
-</lobster_upgrade_module>
+
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **採集成功率**：顯著提升，能應對更複雜的現代網頁架構。
-*   **開發速度**：無需手動編寫繁瑣的爬蟲代碼，代理能自動推導採集邏輯。
-*   **資料可用性**：採集完成即是乾淨、可直接分析的資料結構。
+*   **運作模式**：遵循 OpenClaw 標準化技能架構。
+*   **溝通模式**：優先提案審核制，確保工作區安全。
+*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。

@@ -1,11 +1,42 @@
 # 🛠 安裝指令 (Feed Prompt)
 
-請將以下指令發送給代理，啟動「合規監察模式」。
+“請不要直接修改你的工作區檔案，先輸出提案供我審核。
+
+任務：
+將以下內容拆分為兩部分：
+
+1. AGENTS.md 片段
+- 只保留長期有效的路由規則、品質原則、禁止事項
+- 內容需精簡、可長期維護
+- 不要放一次性寫作細節
+
+2. SKILL.md
+- 技能名稱：protocol_enforcer
+- 請重構為可重用的 OpenClaw skill
+- 需包含：
+  - Title
+  - Purpose
+  - When to use
+  - Required inputs
+  - Workflow
+  - Constraints
+  - Output format
+  - Self-check checklist
+  - Failure modes
+
+規則：
+- 不要原樣照抄
+- 要補足缺失的執行流程與驗證邏輯
+- 若原規則有機械化、容易產生 AI 味的部分，請主動修正
+
+以下是原始內容：”
+
+
 
 ---
 
 ```xml
-<lobster_upgrade_module id="protocol_enforce_v1">
+
     <enforcement_matrix>
         1. 接受輸入：標記任何潛在的敏感指令。
         2. 輸出預審：在內部暫存區（scratchpad）生成草稿。
@@ -23,12 +54,12 @@
     <audit_log_format>
         [PROTOCOL_AUDIT]: PASS/FAIL | REASON: {Reason_String}
     </audit_log_format>
-</lobster_upgrade_module>
+
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **系統安全性**：顯著降低遭惡意攻擊或誘導產生錯誤內容的風險。
-*   **一致性**：確保團隊中所有 AI 代理的產出風格與規範完全統一。
-*   **自動化審查**：減少人工介入，實現 24/7 的完全合規運作。
+*   **運作模式**：遵循 OpenClaw 標準化技能架構。
+*   **溝通模式**：優先提案審核制，確保工作區安全。
+*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。

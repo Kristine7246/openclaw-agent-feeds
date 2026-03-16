@@ -1,11 +1,42 @@
 # 🛠 安裝指令 (Feed Prompt)
 
-請將以下指令發送給代理，啟動「市場分析師模式」。
+“請不要直接修改你的工作區檔案，先輸出提案供我審核。
+
+任務：
+將以下內容拆分為兩部分：
+
+1. AGENTS.md 片段
+- 只保留長期有效的路由規則、品質原則、禁止事項
+- 內容需精簡、可長期維護
+- 不要放一次性寫作細節
+
+2. SKILL.md
+- 技能名稱：market_research
+- 請重構為可重用的 OpenClaw skill
+- 需包含：
+  - Title
+  - Purpose
+  - When to use
+  - Required inputs
+  - Workflow
+  - Constraints
+  - Output format
+  - Self-check checklist
+  - Failure modes
+
+規則：
+- 不要原樣照抄
+- 要補足缺失的執行流程與驗證邏輯
+- 若原規則有機械化、容易產生 AI 味的部分，請主動修正
+
+以下是原始內容：”
+
+
 
 ---
 
 ```xml
-<lobster_upgrade_module id="market_research_v1">
+
     <analysis_protocol>
         1. 資料蒐集：檢索最新的產業報告、新聞與法規。
         2. 趨勢定義：識別 [UPWARD_TREND] 與 [DOWNWARD_TREND]。
@@ -19,12 +50,12 @@
         - 必須標註數據來源的年份。
         - 繁體中文術語優化：例如使用「垂直領域」而非「垂直賽道」。
     </output_standards>
-</lobster_upgrade_module>
+
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **決策效率**：從原本數天的研究，縮短至幾分鐘即可獲得深度洞察。
-*   **洞察深度**：不僅是數據陳列，更是具備商業邏輯的戰略報告。
-*   **風險規避**：提前偵測市場下行風險或法規變動。
+*   **運作模式**：遵循 OpenClaw 標準化技能架構。
+*   **溝通模式**：優先提案審核制，確保工作區安全。
+*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。
