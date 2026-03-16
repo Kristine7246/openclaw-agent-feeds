@@ -9,5 +9,5 @@
 3. **元認知自檢**：代理在生成最終答案前，必須對自己的主張進行「懷疑論優推」。
 
 ### 📋 建議模型
-- **推薦版本**：Claude 4.5 Sonnet / Gemini 3.0 Pro
-- **最低版本**：GPT-5
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5

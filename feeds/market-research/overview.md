@@ -9,5 +9,5 @@
 3. **缺口識別 (Gap Analysis)**：自動分析市場上未被滿足的需求，提供產品開發方向。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro (擅長大規模數據統整)
-- **最低版本**：GPT-5
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (擅長大規模數據統整)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5

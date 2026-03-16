@@ -9,5 +9,5 @@
 3. **記憶回收與歸檔 (Recollection)**：自動對過期的對話或知識進行摘要歸檔，釋放上下文空間。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro (支援超長 Context，並具備優異的檢索能力)
-- **最低版本**：Claude 4.5 Sonnet
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (支援超長 Context，並具備優異的檢索能力)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5

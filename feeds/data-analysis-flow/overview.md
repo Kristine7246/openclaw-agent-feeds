@@ -9,5 +9,5 @@
 3. **視覺化建議**：不僅分析數據，更會產出對應的 Python/Javascript 繪圖代碼，生成直觀圖表。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro (具備強大的代碼執行權與數據處理能力)
-- **最低版本**：Claude 4.5 Sonnet
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (具備強大的代碼執行權與數據處理能力)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5

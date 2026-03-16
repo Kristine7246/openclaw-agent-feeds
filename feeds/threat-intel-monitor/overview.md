@@ -9,5 +9,5 @@
 3. **緩解方案自動推薦**：在發現威脅的第一時間，同步產出防火牆規則 (IP/Domain Block) 或系統修補建議。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro (資料時效性高)
-- **最低版本**：GPT-5
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (資料時效性高)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5

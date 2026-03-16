@@ -9,5 +9,5 @@
 3. **資料清洗與去重 (Deduplication)**：在存儲前自動過濾重複資訊與無效跳轉，確保資料庫的高純淨度。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro (擅長處理長代碼與複雜 HTML 解析)
-- **最低版本**：o1-mini (2026 Gen)
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (擅長處理長代碼與複雜 HTML 解析)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5 (2026 Gen)

@@ -9,5 +9,5 @@
 3. **技術債偵測**：在生成文檔時，同步標註代碼中缺少註釋或邏輯複雜的部分。
 
 ### 📋 建議模型
-- **推薦版本**：Claude 4.5 Sonnet (文字表達極為精準)
-- **最低版本**：Gemini 3.0 Pro
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (文字表達極為精準)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5

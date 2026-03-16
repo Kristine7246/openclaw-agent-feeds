@@ -9,5 +9,5 @@
 3. **覆蓋率導向**：針對未經測試的邏輯分支，精準生成測試補丁。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro (擅長邏輯推演與邊界測試)
-- **最低版本**：Claude 4.5 Sonnet
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (擅長邏輯推演與邊界測試)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5

@@ -9,5 +9,5 @@
 3. **零幻覺約束**：嚴格限定代理僅能從提供的 Context 中擷取資訊。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro / Claude 4.5 Sonnet
-- **最低版本**：Gemini 2.5 Flash / o1-mini (2026 Gen)
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5 (2026 Gen)

@@ -9,5 +9,5 @@
 3. **補丁安全驗證**：在產出修補代碼的同時，主動預測修補後可能產生的副作用。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro (擅長處理長上下文的 Bug 追蹤)
-- **最低版本**：Claude 4.5 Sonnet
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (擅長處理長上下文的 Bug 追蹤)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5

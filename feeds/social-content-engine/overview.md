@@ -9,5 +9,5 @@
 3. **SEO 融入標籤**：讓社群內容在搜尋引擎（如 Google, Threads 搜尋）中具備更好的長期流量。
 
 ### 📋 建議模型
-- **推薦版本**：Claude 4.5 Sonnet (創意與語感最靈活)
-- **最低版本**：o1-mini (2026 Gen)
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (創意與語感最靈活)
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5 (2026 Gen)

@@ -9,5 +9,5 @@
 3. **缺漏主動偵測**：當資訊不足以支撐結論時，主動發起新的補充搜尋。
 
 ### 📋 建議模型
-- **推薦版本**：Gemini 3.0 Pro / GPT-5
-- **最低版本**：Gemini 2.5 Flash
+- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6
+- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5
