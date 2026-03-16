@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="category-badge">${pack.category}</div>
                     <h3 class="h5 fw-bold mb-3">${pack.name}</h3>
                     <p class="text-muted small mb-4 flex-grow-1">${pack.description}</p>
-                    <button onclick="window.app.viewDetails('${pack.id}')" class="btn btn-outline-primary btn-sm rounded-pill w-100">查看技術規格</button>
+                    <button onclick="window.app.viewDetails('${pack.id}')" class="btn-view-spec w-100">查看技術規格</button>
                 </article>
             </div>
         `).join('');
