@@ -1,4 +1,6 @@
-# OpenClaw Agent Feeds (龍蝦升級飼料包)
+# OpenClaw Agent Feeds (龍蝦升級飼料包) - v0.1
+
+### 🚀 官方網站：[https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
 
 歡迎來到 OpenClaw AI Agents 升級模組庫
 

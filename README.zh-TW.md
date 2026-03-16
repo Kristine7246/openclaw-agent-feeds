@@ -1,5 +1,7 @@
 # OpenClaw Agent Feeds (龍蝦升級飼料包) - v0.1
 
+### 🚀 官方網站：[https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
+
 ### 🦞 專案理念：什麼是「龍蝦飼料」？
 在 OpenClaw 的生態系中，AI 代理（Agents）被暱稱為 **「龍蝦」**。而所謂的 **「龍蝦飼料 (Lobster Feeds)」**，本質上是經過深度調校、模組化的 **高級提示詞模板（Prompt Templates）**。
 
