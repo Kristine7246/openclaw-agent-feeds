@@ -37,9 +37,20 @@
 - **多代理協作調度員** `[專家]` - [概覽](feeds/multi-agent-coord/overview.md) | [安裝指令](feeds/multi-agent-coord/installation_guide.md)
 - **語義記憶增強器** `[入門]` - [概覽](feeds/semantic-memory-boost/overview.md) | [安裝指令](feeds/semantic-memory-boost/installation_guide.md)
 - **系統協議執行官** `[專家]` - [概覽](feeds/protocol-enforcer/overview.md) | [安裝指令](feeds/protocol-enforcer/installation_guide.md)
+- **意圖深度釐清器** `[進階]` [NEW] - [概覽](feeds/intent-clarifier/overview.md) | [安裝指令](feeds/intent-clarifier/installation_guide.md)
+
+### 🔹 多模態與安全性 [NEW]
+- **視覺內容審計代理** `[進階]` - [概覽](feeds/visual-auditor/overview.md) | [安裝指令](feeds/visual-auditor/installation_guide.md)
+- **語音指令邏輯提取器** `[入門]` - [概覽](feeds/voice-to-logic/overview.md) | [安裝指令](feeds/voice-to-logic/installation_guide.md)
+- **PII 自動脫敏護欄** `[專家]` - [概覽](feeds/pii-masking/overview.md) | [安裝指令](feeds/pii-masking/installation_guide.md)
+- **跨國合規執行包裹器** `[專家]` - [概覽](feeds/global-compliance/overview.md) | [安裝指令](feeds/global-compliance/installation_guide.md)
+
+### 🔹 垂直專業領域 [NEW]
+- **法律條文精算師** `[專家]` - [概覽](feeds/legal-precision/overview.md) | [安裝指令](feeds/legal-precision/installation_guide.md)
+- **醫學文獻與藥理綜述助手** `[專家]` - [概覽](feeds/medical-research/overview.md) | [安裝指令](feeds/medical-research/installation_guide.md)
 
 ### 🔹 自動化擴展包
-- **自主研究代理** `[進階]` - [概覽](feeds/autonomous-research/overview.md) | [安裝指令](feeds/autonomous-research/installation_guide.md)
+- **自主 research 代理** `[進階]` - [概覽](feeds/autonomous-research/overview.md) | [安裝指令](feeds/autonomous-research/installation_guide.md)
 - **AI SEO 內容工廠** `[進階]` - [概覽](feeds/ai-seo-factory/overview.md) | [安裝指令](feeds/ai-seo-factory/installation_guide.md)
 - **聯盟行銷自動化** `[入門]` - [概覽](feeds/affiliate-marketing-auto/overview.md) | [安裝指令](feeds/affiliate-marketing-auto/installation_guide.md)
 - **潛在客戶自動開發** `[入門]` - [概覽](feeds/lead-gen-automation/overview.md) | [安裝指令](feeds/lead-gen-automation/installation_guide.md)

@@ -35,6 +35,17 @@ This project serves as a high-quality "Feed Buffet," allowing developers and arc
 - **Multi-Agent Orchestrator** `[Expert]` - [Overview](feeds/multi-agent-coord/overview.md) | [Install Guide](feeds/multi-agent-coord/installation_guide.md)
 - **Semantic Memory Boost** `[Beginner]` - [Overview](feeds/semantic-memory-boost/overview.md) | [Install Guide](feeds/semantic-memory-boost/installation_guide.md)
 - **Protocol Enforcer** `[Expert]` - [Overview](feeds/protocol-enforcer/overview.md) | [Install Guide](feeds/protocol-enforcer/installation_guide.md)
+- **Deep Intent Clarifier** `[Advanced]` [NEW] - [Overview](feeds/intent-clarifier/overview.md) | [Install Guide](feeds/intent-clarifier/installation_guide.md)
+
+### 🔹 Multimodal & Security [NEW]
+- **Visual Auditor Agent** `[Advanced]` - [Overview](feeds/visual-auditor/overview.md) | [Install Guide](feeds/visual-auditor/installation_guide.md)
+- **Voice-to-Logic Extractor** `[Beginner]` - [Overview](feeds/voice-to-logic/overview.md) | [Install Guide](feeds/voice-to-logic/installation_guide.md)
+- **PII Masking Guardrails** `[Expert]` - [Overview](feeds/pii-masking/overview.md) | [Install Guide](feeds/pii-masking/installation_guide.md)
+- **Global Compliance Wrapper** `[Expert]` - [Overview](feeds/global-compliance/overview.md) | [Install Guide](feeds/global-compliance/installation_guide.md)
+
+### 🔹 Vertical Specialties [NEW]
+- **Legal Precision Analyst** `[Expert]` - [Overview](feeds/legal-precision/overview.md) | [Install Guide](feeds/legal-precision/installation_guide.md)
+- **Medical Research Pro** `[Expert]` - [Overview](feeds/medical-research/overview.md) | [Install Guide](feeds/medical-research/installation_guide.md)
 
 ### 🔹 Automation Packs
 - **Autonomous Research Agent** `[Advanced]` - [Overview](feeds/autonomous-research/overview.md) | [Install Guide](feeds/autonomous-research/installation_guide.md)
