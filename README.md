@@ -1,6 +1,4 @@
-# OpenClaw Agent Feeds (龍蝦升級飼料包) - v2.0 (2026 Edition)
-
-### 🚀 官方網站：[https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
+# OpenClaw Agent Feeds (龍蝦升級飼料包) 2026Q1 Edition
 
 歡迎來到 OpenClaw AI Agents 升級模組庫
 
@@ -9,11 +7,10 @@
 
 ---
 
-### 🛠 v2.0 重大更新
+### 🛠 v2.0 重大創新
 「龍蝦飼料」是專為 OpenClaw 設計的高級提示詞模板，旨在通過通訊軟體輕鬆「餵食」，提升 AI 代理的執行力。
 
 Lobster Feeds are high-level prompt templates designed for OpenClaw, aimed at enhancing AI Agent capabilities with ease of use through instant messaging.
-
 
 ## 🛒 Lobster Feed Library (主廚推薦飼料庫)
 
@@ -46,6 +43,8 @@ Lobster Feeds are high-level prompt templates designed for OpenClaw, aimed at en
 - **威脅情報監控員** `[進階]` - [概覽](feeds/threat-intel-monitor/overview.md) | [安裝指令](feeds/threat-intel-monitor/installation_guide.md)
 
 ---
+
+### 🚀 官方網站：[https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
 
 **[授權條款 (MIT License)](LICENSE)**
 
