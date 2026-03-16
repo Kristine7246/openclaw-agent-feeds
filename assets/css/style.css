@@ -114,7 +114,12 @@ body {
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
-    margin: 2rem 0 3rem;
+    margin: 2rem 0 1rem;
+}
+
+.filter-nav.mt-0 {
+    margin-top: 0 !important;
+    margin-bottom: 3rem;
 }
 
 .filter-btn {
@@ -163,6 +168,13 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     display: block;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
 .service-card h3 {

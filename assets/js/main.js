@@ -1,6 +1,5 @@
 /**
  * OpenClaw Agent Feeds - Core Logic
- * Author: FlyPig AI
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,12 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. State Management
     let allPacks = [];
     let currentCategory = '全部';
+    let currentLevel = '全部';
     const packModal = new bootstrap.Modal(document.getElementById('packModal'));
-    const UNIFIED_SYSTEM_PREFIX = 'projects/4044680601076201931/screens/'; // Placeholder for future expansion
 
     // 3. Elements
     const grid = document.getElementById('packs-grid');
-    const filterNav = document.querySelector('.filter-nav');
+    const categoryNav = document.getElementById('category-filters');
+    const levelNav = document.getElementById('level-filters');
     const modalContent = document.getElementById('modal-content');
     const modalTitle = document.getElementById('modalTitle');
     const installGuideBtn = document.getElementById('installGuideBtn');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="col-12 text-center py-5">
                     <div class="alert alert-warning d-inline-block">
                         <i class="fas fa-exclamation-triangle me-2"></i> 
-                        數據載入失敗。如果您是直接開啟 HTML 檔案，請改用 <strong>Live Server</strong> 或任何本地伺服器開啟以支援數據請求。
+                        數據載入失敗。請檢查網絡或使用伺服器環境開啟。
                     </div>
                 </div>
             `;
@@ -47,36 +47,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5. Renderers
     function renderFilters() {
+        // Category Filters
         const categories = ['全部', ...new Set(allPacks.map(p => p.category))];
-        filterNav.innerHTML = categories.map(cat => `
-            <button class="filter-btn ${cat === currentCategory ? 'active' : ''}" data-category="${cat}">
-                ${cat === '全部' ? '全部模組' : cat.replace('包', '')}
-            </button>
-        `).join('');
+        if (categoryNav) {
+            categoryNav.innerHTML = categories.map(cat => `
+                <button class="filter-btn category-btn ${cat === currentCategory ? 'active' : ''}" data-category="${cat}">
+                    ${cat === '全部' ? '全部模組' : cat.replace('包', '')}
+                </button>
+            `).join('');
+        }
 
-        // Re-attach listeners
-        document.querySelectorAll('.filter-btn').forEach(btn => {
+        // Level Filters
+        const levels = ['全部', '入門', '進階', '專家'];
+        if (levelNav) {
+            levelNav.innerHTML = levels.map(lvl => `
+                <button class="filter-btn level-btn ${lvl === currentLevel ? 'active' : ''}" data-level="${lvl}">
+                    ${lvl === '全部' ? '所有等級' : lvl}
+                </button>
+            `).join('');
+        }
+
+        // Listeners for Categories
+        document.querySelectorAll('.category-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const cat = e.target.getAttribute('data-category');
-                updateFilter(cat);
+                currentCategory = e.target.getAttribute('data-category');
+                updateFilterUI();
+                renderPacks();
+            });
+        });
+
+        // Listeners for Levels
+        document.querySelectorAll('.level-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                currentLevel = e.target.getAttribute('data-level');
+                updateFilterUI();
+                renderPacks();
             });
         });
     }
 
+    function updateFilterUI() {
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-category') === currentCategory);
+        });
+        document.querySelectorAll('.level-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-level') === currentLevel);
+        });
+    }
+
     function renderPacks() {
-        const filtered = currentCategory === '全部' 
-            ? allPacks 
-            : allPacks.filter(p => p.category === currentCategory);
+        const filtered = allPacks.filter(p => {
+            const matchesCat = currentCategory === '全部' || p.category === currentCategory;
+            const matchesLvl = currentLevel === '全部' || p.level === currentLevel;
+            return matchesCat && matchesLvl;
+        });
 
         if (filtered.length === 0) {
-            grid.innerHTML = '<div class="col-12 text-center py-5 text-muted">目前暫無該分類內容。</div>';
+            grid.innerHTML = '<div class="col-12 text-center py-5 text-muted">目前暫無符合條件的內容。</div>';
             return;
         }
 
         grid.innerHTML = filtered.map((pack, index) => `
             <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="${(index % 4) * 100}">
                 <article class="service-card shadow-sm h-100">
-                    <div class="category-badge">${pack.category}</div>
+                    <div class="d-flex justify-content-between align-items-start">
+                        <span class="category-badge">${pack.category}</span>
+                        <span class="badge ${getLevelClass(pack.level)}">${pack.level}</span>
+                    </div>
                     <h3 class="h5 fw-bold mb-3">${pack.name}</h3>
                     <p class="text-muted small mb-4 flex-grow-1">${pack.description}</p>
                     <button onclick="window.app.viewDetails('${pack.id}')" class="btn-view-spec w-100">查看技術規格</button>
@@ -85,27 +122,32 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // 6. Logic Handlers
-    function updateFilter(category) {
-        currentCategory = category;
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            if (btn.getAttribute('data-category') === category) btn.classList.add('active');
-            else btn.classList.remove('active');
-        });
-        renderPacks();
+    function getLevelClass(level) {
+        switch(level) {
+            case '專家': return 'bg-danger';
+            case '進階': return 'bg-warning text-dark';
+            default: return 'bg-info text-dark';
+        }
     }
 
+    // 6. Logic Handlers
     async function fetchMarkdown(path) {
         const response = await fetch(`feeds/${path}`);
         if (!response.ok) throw new Error('文件尚未準備就緒。');
-        return await response.text();
+        const text = await response.text();
+        
+        // Safety check: if the server returns index.html instead of MD
+        if (text.trim().toLowerCase().startsWith('<!doctype') || text.trim().toLowerCase().startsWith('<html')) {
+            throw new Error('該模組文件仍在撰寫中。');
+        }
+        
+        return text;
     }
 
     function renderMarkdown(md) {
         if (typeof marked !== 'undefined') {
             return marked.parse(md);
         }
-        // Fallback to simple parser if marked is not available
         return md.replace(/\n\n/g, '<p></p>').replace(/\n/g, '<br>');
     }
 
@@ -123,7 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const md = await fetchMarkdown(`${pack.path}overview.md`);
             modalContent.innerHTML = renderMarkdown(md);
             
-            // Check for installation guide
             installGuideBtn.onclick = () => loadInstallGuide(packId);
             installGuideBtn.classList.remove('d-none');
         } catch (err) {
@@ -136,6 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadInstallGuide(packId) {
         const pack = allPacks.find(p => p.id === packId);
+        if (!pack) return;
+        
         modalContent.innerHTML = '<div class="loading-overlay"><div class="spinner-border text-primary" role="status"></div></div>';
         installGuideBtn.classList.add('d-none');
 
@@ -147,6 +190,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Expose needed functions to global scope for inline onclicks
-    window.app = { viewDetails };
+    // Expose needed functions to global scope
+    window.app = { viewDetails, loadInstallGuide };
 });
