@@ -1,5 +1,10 @@
 # 🛠 安裝指令 (Feed Prompt)
 
+請直接點擊下方「複製」按鈕，並將完整的指令發送給您的 OpenClaw 代理（或貼入 System Instructions），即可開始結構化重組。
+
+---
+
+```text
 “請不要直接修改你的工作區檔案，先輸出提案供我審核。
 
 任務：
@@ -31,13 +36,9 @@
 
 以下是原始內容：”
 
+及
 
-
----
-
-```xml
-
-    <intel_logic>
+<intel_logic>
         1. 對手定位：分析對手的品牌價值觀與核心承諾。
         2. 矩陣比對：
            - [MY_STRENGTH] vs [COMPETITOR_WEAKNESS]
@@ -51,12 +52,11 @@
         - 廣告廣告庫同步 (Meta Ad Library)
         - 使用者負面評論抓取 (App Store/G2/Trustpilot)
     </monitoring_focus>
-
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **運作模式**：遵循 OpenClaw 標準化技能架構。
-*   **溝通模式**：優先提案審核制，確保工作區安全。
-*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。
+*   **版本控制**：強制執行提案審核制，避免 AI 擅自改動工作區。
+*   **結構升級**：自動將提示詞拆分為 `AGENTS.md` 與 `SKILL.md`，提升長期維護性。
+*   **質量保證**：補足執行流程與驗證邏輯，減少「AI 味」並提升專業度。

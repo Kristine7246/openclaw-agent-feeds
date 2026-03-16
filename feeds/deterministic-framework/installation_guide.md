@@ -1,5 +1,10 @@
 # 🛠 安裝指令 (Feed Prompt)
 
+請直接點擊下方「複製」按鈕，並將完整的指令發送給您的 OpenClaw 代理（或貼入 System Instructions），即可開始結構化重組。
+
+---
+
+```text
 “請不要直接修改你的工作區檔案，先輸出提案供我審核。
 
 任務：
@@ -31,13 +36,9 @@
 
 以下是原始內容：”
 
+及
 
-
----
-
-```xml
-
-    <system_constraint>
+<system_constraint>
         1. 思考優先：在任何輸出前，必須先在 <thought> 標籤內進行邏輯推導。
         2. XML 封裝：最終解答必須包裹在 <response> 標籤內。
         3. 確定性檢查：
@@ -56,12 +57,11 @@
         當遇到「不確定」或「資訊不足」時，禁止猜測。
         必須回覆：[INSUFFICIENT_DATA_ERROR: {Missing_Field}]
     </output_guardians>
-
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **運作模式**：遵循 OpenClaw 標準化技能架構。
-*   **溝通模式**：優先提案審核制，確保工作區安全。
-*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。
+*   **版本控制**：強制執行提案審核制，避免 AI 擅自改動工作區。
+*   **結構升級**：自動將提示詞拆分為 `AGENTS.md` 與 `SKILL.md`，提升長期維護性。
+*   **質量保證**：補足執行流程與驗證邏輯，減少「AI 味」並提升專業度。

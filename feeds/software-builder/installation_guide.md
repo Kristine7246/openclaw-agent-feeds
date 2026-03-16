@@ -1,5 +1,10 @@
 # 🛠 安裝指令 (Feed Prompt)
 
+請直接點擊下方「複製」按鈕，並將完整的指令發送給您的 OpenClaw 代理（或貼入 System Instructions），即可開始結構化重組。
+
+---
+
+```text
 “請不要直接修改你的工作區檔案，先輸出提案供我審核。
 
 任務：
@@ -31,13 +36,9 @@
 
 以下是原始內容：”
 
+及
 
-
----
-
-```xml
-
-    <architecture_protocol>
+<architecture_protocol>
         1. 接收需求：分析核心功能點。
         2. 規劃架構：產出 [PROJECT_STRUCTURE] 檔案樹。
         3. 定義介面：先編寫關鍵 Class/Function 的定義與 Docstring。
@@ -56,12 +57,11 @@
         [CODE]: {code_block}
         [SUMMARY]: 本模組的作用與已知限制。
     </output_template>
-
 ```
 
 ---
 
 ### 💡 餵食後效果
-*   **運作模式**：遵循 OpenClaw 標準化技能架構。
-*   **溝通模式**：優先提案審核制，確保工作區安全。
-*   **品質保證**：內建自檢清單（Self-check checklist）與錯誤處理（Failure modes）。
+*   **版本控制**：強制執行提案審核制，避免 AI 擅自改動工作區。
+*   **結構升級**：自動將提示詞拆分為 `AGENTS.md` 與 `SKILL.md`，提升長期維護性。
+*   **質量保證**：補足執行流程與驗證邏輯，減少「AI 味」並提升專業度。
