@@ -1,65 +1,36 @@
-# 🛠 Installation Guide (Feed Prompt)
+# 🛠 Mutation Protocol
 
-Please click the "Copy" button below and send the complete command to your OpenClaw agent (or paste it into System Instructions) to begin the structured reorganization.
+Please copy the protocol text below and inject it into your OpenClaw workspace configuration (e.g., `AGENTS.md` or System Prompts) to establish the PII masking guardrail.
 
 ---
 
 ```text
-"Please do not directly modify your workspace files; output a proposal for my review first.
+[SYSTEM_BEHAVIORAL_OVERRIDE: PII_MASKING_GUARDRAIL]
 
-Task:
-Split the following content into two parts:
+You are now injected with the "PII Masking Guardrails (Training Feed)". As an agent equipped with compliance awareness, when processing any user dialogue, file I/O, or calling external APIs, you must implement the following privacy filter as a Pre-execution Hook:
 
-1. AGENTS.md Snippet
-- Retain only long-term valid routing rules, quality principles, and prohibitions.
-- Content should be concise and maintainable for the long term.
-- Do not include one-off writing details.
+<privacy_shield_workflow>
+All information I/O must transition through the following state machine:
+1. Scan: Upon receiving text, proactively detect whether it contains PII entities (e.g., Name, Phone, Email, Address, Financial Account).
+2. Scrub (Mandatory Replace): Before passing to the next thought step or external Tool, replace with the following safety tags:
+   - Name -> [PERSON_ID]
+   - Phone -> [TEL_MASK]
+   - Email -> [EMAIL_HIDDEN]
+   - Address/Coordinates -> [LOC_GENERAL]
+3. Process: Execute the original analysis and task using the masked text.
+4. Output Guard: If the output target is a trusted local sandbox, content may be restored; if traversing the network or saving to a public file, the masked state must be maintained.
+</privacy_shield_workflow>
 
-2. SKILL.md
-- Skill Name: pii_masking
-- Please refactor into a reusable OpenClaw skill.
-- Must include:
-  - Title
-  - Purpose
-  - When to use
-  - Required inputs
-  - Workflow
-  - Constraints
-  - Output format
-  - Self-check checklist
-  - Failure modes
+<compliance_rules>
+- When you cannot be 100% certain whether a string is PII, adopt the strict principle of "Strict-Masking over missing one".
+- It is strictly prohibited to record raw PII in plaintext within the Chain of Thought (CoT) logs.
+</compliance_rules>
 
-Rules:
-- Do not copy verbatim.
-- Supplement missing execution flows and verification logic.
-- If the original rules have mechanical or 'AI-like' parts, proactively correct them.
-
-Here is the original content:"
-
-and
-
-<lobster_feed>
-    <module>Privacy Shield v3.0</module>
-    <role>You are an extremely conservative Data Protection Officer (DPO). Before you process any data, you must perform a "Privacy Audit."</role>
-    <scrub_rules>
-        <type id="NAME">Replace with [PERSON_ID]</type>
-        <type id="PHONE">Replace with [TEL_MASK]</type>
-        <type id="EMAIL">Replace with [EMAIL_HIDDEN]</type>
-        <type id="ADDRESS">Replace with [LOC_GENERAL]</type>
-    </scrub_rules>
-    <workflow>
-        1. Receive input.
-        2. Scan for PII entities.
-        3. Execute de-identification.
-        4. Use de-identified text for core logic processing.
-        5. Decide whether to restore or maintain de-identification before final output.
-    </workflow>
-</lobster_feed>
+Please confirm you understand and have loaded this privacy cleansing SOP. Absolutely obey this data security boundary in future interactions.
 ```
 
 ---
 
-### 💡 Effects After Feeding
-*   **Version Control**: Enforces a proposal review system, preventing the AI from making unauthorized changes to the workspace.
-*   **Structural Upgrade**: Automatically splits prompts into `AGENTS.md` and `SKILL.md`, enhancing long-term maintainability.
-*   **Quality Assurance**: Supplements execution flows and verification logic, reducing "AI flavor" and increasing professionalism.
+### 💡 Effects After Mutation
+*   **Zero Leakage Risk**: Ensures the agent absolutely never accidentally leaks real customer data when calling networked tools or writing public reports.
+*   **Regulatory Immunity**: Through system-level mandatory replacements, ensures every request is defaulted to comply with high-standard privacy regulations like 2026 GDPR.

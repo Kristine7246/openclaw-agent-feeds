@@ -1,13 +1,17 @@
-# 🦞 [Security & Privacy] PII Masking Guardrails
+# 🦞 [Training Feed] PII Masking Guardrails
 
-### 📄 File Overview
-Under strict global privacy regulations in 2026, the cost of leaking **Personally Identifiable Information (PII)** is extremely high. This feed pack establishes a "security filter membrane" for the agent, automatically performing de-identification before data enters the AI core for processing.
+### 📄 Module Overview
+Under the strict global privacy regulations of 2026, the cost of leaking **Personally Identifiable Information (PII)** is extremely high. This feed pack (Training Feed) establishes a "Safety Filter Membrane" for your workspace, automatically masking data before calling external APIs or writing outputs. This module aims to enhance task compliance and cognitive logic without actively destroying or modifying the workspace file structure.
 
-### 🚀 Core Enhancements
-1. **Named Entity Recognition (NER)**: Automatically identifies names, phone numbers, ID numbers, credit card numbers, etc.
-2. **Dynamic De-identification**: Tokenizes sensitive words (e.g., [USER_01]), restoring them after processing or masking them permanently.
-3. **Compliance Logs**: Records de-identification behavior during processing (excluding raw data).
+### ⚙️ Skill Synergy
+- **Recommended Skills**: Any Plugins/Skills involving network transmission (e.g., `search_web`, `send_email`)
+- **Synergy Effect**: Acting as a mandatory middleware layer, the agent is forced to execute `[MASK]` replacements on any entity strings containing potential user data before passing them to external tools.
+
+### 🚀 Mutation Target & Protocol
+1. **NER Intercept**: Automatically extracts sensitive strings such as names, phone numbers, localized ID numbers, and credit cards.
+2. **Dynamic Scrubbing**: Forces the replacement of sensitive words with standard tags (e.g., `[USER_01]`, `[TEL_MASK]`), ensuring original data never circulates in unsafe environments.
+3. **Safe Restoration Boundary**: Restoration of masked data is only permitted when outputting to the local terminal or a trusted secure sandbox file.
 
 ### 📋 Recommended Models
-- **Recommended**: GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (High accuracy required to avoid missing PII)
-- **Minimum**: GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5 (2026 Gen)
+- **Recommended**: Gemini 3.0 Pro / GPT-5.3 / Claude Sonnet 4.6 (requires extremely high accuracy to avoid missing PII)
+- **Minimum**: Gemini 3.1 Flash / GPT-5.1
