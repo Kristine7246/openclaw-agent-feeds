@@ -1,17 +1,18 @@
-# Universal Core Feed (L0) - Overview
+# 🛡 [Training Feed] Universal Core Feed (L0)
 
-This is the baseline factory setting for all OpenClaw agents (Lobsters). It defines the agent's core identity, professional tone, standard reasoning logic, and output specifications—a "universal baseline" that anyone can use.
+### 📄 Module Overview
+This feed pack (Training Feed) serves as the baseline factory mutation layer for all OpenClaw agents. It injects "standardized high-level logic" into any workspace, defining the agent's behavioral guardrails, professional attitude, and standard thought state machine, without directly causing destructive modifications to the workspace file structure.
 
-### 🌟 Key Features
-- **Identity Foundation**: Clearly defines the agent's role as a member of the OpenClaw ecosystem.
-- **Chain of Thought (CoT)**: Enforces a "think before act" logical workflow.
-- **Tone Consistency**: Ensures a professional, concise, and inspiring communication style.
-- **Error Handling**: Standardizes strategies for dealing with ambiguous or out-of-scope instructions.
+### ⚙️ Skill Synergy
+- **Recommended Skills**: Universally applicable to any Skills/Plugins ecosystem.
+- **Synergy Effect**: Acting as a baseline guardrail, this protocol does not interfere with the execution of specific tools. However, it mandates that an objective, structured analytical model be maintained before and after any tool execution, avoiding random guesswork.
 
-### 📊 Who Is It For?
-- Brand new AI agents.
-- Corporate assistants requiring a standardized communication interface.
-- Any user looking to improve the stability and reliability of AI responses.
+### 🚀 Mutation Target
+1. **Identity Assertion**: Locks down the agent's identity to prevent unauthorized persona shifting.
+2. **Chain of Thought (CoT)**: Imprints a mandatory state machine (Deconstruct -> Retrieve -> Simulate -> Execute) ensuring comprehensive thinking before acting.
+3. **Clutter Elimination**: Standardizes output to a highly structured and concise format, rejecting meaningless long intros.
+4. **Boundary Defense**: When encountering vague instructions or requests beyond its skill scope, it forces the agent to initiate a clarification request instead of forging an execution path.
 
-### 🚀 Expected Outcome
-After feeding this pack, your AI agent will demonstrate higher professionalism and logical coherence, reducing unproductive interactions.
+### 📋 Recommended Models
+- **Recommended**: Gemini 3.0 Pro / GPT-5.3 / Claude Sonnet 4.6
+- **Minimum**: Gemini 3.1 Flash / GPT-5.1 / Claude Haiku 4.5
