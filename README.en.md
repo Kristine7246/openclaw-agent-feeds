@@ -13,6 +13,24 @@ Rather than just a collection of prompts, feeds are a powerful mechanism that ma
 
 This project serves as a high-quality "Feed Buffet," allowing developers and architects to select the most suitable technical enhancement systems for their AI Agents.
 
+### 🎯 Who is this project for?
+- **OpenClaw beginners**: For those who want better, smarter prompts without learning the full skill/plugin development stack.
+- **Advanced users & architects**: For those who want reusable, battle-tested feed design patterns to orchestrate agents.
+- **Open-source contributors**: For anyone interested in prompt systems, agent workflows, and safe mutation protocols.
+
+### 🌟 Example: Before / After
+Why install a feed? Compare the execution differences:
+- **❌ Without feed**: Vague answers, guesswork, lengthy apologies, and dangerous operational hallucinations.
+- **✅ With Universal Core L0 feed**: Structured logic, verified execution, absolute precision, and immediate safety interception!
+
+### 📐 Design Principles (What makes a good feed)
+We are building a "Methodology" repository, not just another prompt compilation. A good feed:
+1. **Improves behavior**, not just tone
+2. **Reduces hallucination** and guesswork natively
+3. **Encourages safe, minimal changes** to file systems
+4. **Works with OpenClaw skills/plugins** instead of attempting to replace them
+5. **Stays readable and reusable** as standardized Markdown code
+
 ### 🛠 v0.1 Key Highlights
 - **Architecture Optimization**: Fully decoupled logic and styles with a data-driven frontend.
 - **Rendering Enhancement**: Integrated Marked.js for precise technical documentation display.
@@ -69,6 +87,35 @@ This project serves as a high-quality "Feed Buffet," allowing developers and arc
 - **Data Collection Agent** `[Beginner]` - [Overview](feeds/data-collection/overview.en.md) | [Install Guide](feeds/data-collection/installation_guide.en.md)
 - **Data Analysis Flow** `[Advanced]` - [Overview](feeds/data-analysis-flow/overview.en.md) | [Install Guide](feeds/data-analysis-flow/installation_guide.en.md)
 - **Threat Intel Monitor** `[Advanced]` - [Overview](feeds/threat-intel-monitor/overview.en.md) | [Install Guide](feeds/threat-intel-monitor/installation_guide.en.md)
+
+---
+
+## 🗺️ Public Roadmap
+We are actively evolving the ecosystem. Incoming features:
+- Unify all feeds under the new protocol structure
+- Split feeds structurally into Training vs Mutation paths
+- Add English parity for all top Chinese feeds
+- Improve beginner onboarding and quick-install methods
+- Add example before/after outputs for visual demonstration
+
+## 🤝 How to contribute
+We highly encourage open-source engagement! Here is how you can help:
+- 🐛 **Report a bug**
+- 💡 **Suggest a new feed**
+- 📝 **Improve wording / docs**
+- 🛠️ **Submit a pull request for an existing feed**
+
+👉 For detailed rules, check our **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+
+### 🐣 Good first contribution ideas
+Unsure where to begin? Try grabbing one of these bite-sized tasks:
+- Translate one feed from Chinese to English (or vice versa)
+- Improve one installation guide formatting
+- Rewrite one legacy feed to match the new V2.0 protocol style
+- Add model compatibility notes
+- Improve one example screenshot for the documentation
+
+**💬 Have an idea for a new feed, refinement, or category? [Open an issue first!](https://github.com/mkhsu2002/openclaw-agent-feeds/issues)**
 
 ---
 ### 🚀 Official Website: [https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)

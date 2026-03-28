@@ -5,12 +5,29 @@
 歡迎來到 OpenClaw AI Agents 升級模組庫
 
 - **[繁體中文介紹 (Traditional Chinese)](README.zh-TW.md)**
-- **[English Description](README.en.md)**
+- **標準化升級**：將複雜的執行邏輯封裝成易於解讀的指令。
+- **即時部署**：複製、貼上、發送，即可讓 AI 代理獲得新的能力。
+- **技術規範**：為 AI 提供確定性框架，減少幻覺，提升執行精準度。
 
----
+本專案旨在提供一個高品質的「飼料 Buffet」，讓開發者與系統架構師能根據需求，為他們的 AI 代理挑選最合適的技術增強系統。
 
-### 🛠 v2.0 重大創新
-「龍蝦飼料」是專為 OpenClaw 設計的高級提示詞模板，旨在通過通訊軟體輕鬆「餵食」，提升 AI 代理的執行力。
+### 🎯 這個專案適合誰？ (Who is this for?)
+- **OpenClaw 新手**：想要立即獲得更穩定、更專業的 AI 回覆，而不需要從頭學習完整的 Skill/Plugin 開發技術棧。
+- **進階使用者與架構師**：尋求可重複使用的 Feed 系統設計模式，快速部署多代理協作架構。
+- **開源貢獻者**：對 Prompt Engineering 系統化、Agent 工作流、以及安全變異層協議 (Safe Mutation Protocols) 深感興趣的開發者。
+
+### 🌟 範例成果 (Before / After Example)
+如果您還在猶豫是否需要安裝 Feed，請看看以下的差異：
+- **❌ Without Feed (未使用)**: AI 產出含糊、冗長且充滿免責聲明的廢話，甚至隨意猜測（幻覺）。
+- **✅ With Universal Core L0 (使用通用核心飼料)**: AI 輸出結構化、經過交叉查證的精準結論，並在執行高危操作前主動攔截風險。
+
+### 📐 設計公理 (What makes a good feed?)
+我們不是普通的提示詞倉庫，這是一個「方法論」等級的 Repo。優秀的 Feed 必須具備以下特點：
+1. **Improves behavior, not just tone** (改變行為邏輯，而不只是改變語氣)
+2. **Reduces hallucination and guesswork** (大幅減少幻覺與瞎猜)
+3. **Encourages safe, minimal changes** (鼓勵最少權限與最安全的修改)
+4. **Works with OpenClaw skills/plugins** (與原生套件完美協同，而非取代它們)
+5. **Stays readable and reusable** (專注於人類工程師也能看懂的高可讀性結構)
 
 Lobster Feeds are high-level prompt templates designed for OpenClaw, aimed at enhancing AI Agent capabilities with ease of use through instant messaging.
 
@@ -55,6 +72,35 @@ Lobster Feeds are high-level prompt templates designed for OpenClaw, aimed at en
 - **數據採集代理** `[入門]` - [概覽](feeds/data-collection/overview.md) | [安裝指令](feeds/data-collection/installation_guide.md)
 - **數據分析工作流** `[進階]` - [概覽](feeds/data-analysis-flow/overview.md) | [安裝指令](feeds/data-analysis-flow/installation_guide.md)
 - **威脅情報監控員** `[進階]` - [概覽](feeds/threat-intel-monitor/overview.md) | [安裝指令](feeds/threat-intel-monitor/installation_guide.md)
+
+---
+
+## 🗺️ 公開開發藍圖 (Roadmap)
+加強 Feed 生態系，我們未來的重點將放在：
+- 統一所有 feeds 到最新的 V2.0 防護協議架構 (Unify all feeds under the new protocol structure)
+- 將 feeds 清晰拆分為培訓與變異兩大類 (Split feeds into Training vs Mutation)
+- 為最熱門的中文 Feed 補齊英文版本 (Add English parity for top feeds)
+- 持續優化新手的安裝與上手體驗 (Improve beginner onboarding)
+- 為 Feed 補充執行前後的真實對比案例 (Add example before/after outputs)
+
+## 🤝 如何參與貢獻 (How to Contribute)
+這是一個完全開源的社群專案，我們非常歡迎任何形式的貢獻！您可以透過以下方式幫助我們：
+- 🐛 **Report a bug** (回報執行錯誤或幻覺災情)
+- 💡 **Suggest a new feed** (提議一個全新的專業領域 Feed)
+- 📝 **Improve wording / docs** (幫忙潤飾文件或修復錯字)
+- 🛠️ **Submit a pull request** (為現有的 Feed 提交 PR 進行強化)
+
+👉 詳細指引請見：[CONTRIBUTING.md](CONTRIBUTING.md)
+
+### 🐣 給新手的貢獻提案 (Good First Contribution Ideas)
+不知道從哪裡開始嗎？試試看這些小任務：
+- Translate one feed (幫忙翻譯某一個 Feed 到英文)
+- Improve one installation guide (優化任一個安裝指南的排版)
+- Rewrite one feed to match the new protocol style (將舊版的 Feed 改寫成 V2.0 架構)
+- Add model compatibility notes (為 Feed 增加特定模型的相容性標記)
+- Improve one example screenshot (為 Repo 提供清晰的執行截圖)
+
+**💬 Have an idea for a new feed, refinement, or category? [Open an issue first!](https://github.com/mkhsu2002/openclaw-agent-feeds/issues)**
 
 ---
 
