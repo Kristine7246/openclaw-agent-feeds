@@ -1,13 +1,18 @@
-# 🧪 [開發者工具] 測試套件架構師 (Test Suite Architect)
+# 🧪 [Mutation Feed] 測試套件架構師 (Test Suite Architect)
 
-### 📄 檔案簡介
-本飼料包專為**極高穩定性要求**的軟體專案設計。它不僅是寫測試，而是構建一套完整的測試邊界，自動識別邊際案例，並產出涵蓋單元、集成與 E2E 的全方位測試套件。
+### 📄 模組簡介
+這將使 AI Agents 在規劃、工具使用、回應結構與結果驗證上更穩定、更精確、更少臆測。本飼料包（Mutation Feed）旨在為您的專案基底搭建**堅如磐石的防禦性測試護城河**。它將您的工作區升級成嚴格的 QA 自動化工程師。透過注入「防護決策迴圈 (Guarded Decision Loop)」，它強迫代理在隨意拉起測試檔之前，必須先解構依賴 (Deconstruct) 並且反覆驗證 (Verify) 斷言 (Assertions) 的穩定性，徹底消滅一陣風吹過就會失效的「脆弱測試檔 (Flaky Tests)」。
 
-### 🚀 升級核心
-1. **邊際案例挖掘 (Corner Case Mining)**：自動推導可能導致系統崩潰的極端輸入值。
-2. **Mocking 策略優化**：自動設計外部 API 與數據庫的模擬邏輯，實現完全的隔離測試。
-3. **覆蓋率導向**：針對未經測試的邏輯分支，精準生成測試補丁。
+### ⚙️ 技能協同 (Skill Synergy)
+- **建議搭配**：工作區內的終端機執行工具 (`run_command`), 檔案寫入/編輯器
+- **協同效應**：將終端機視為測試的「角鬥場」。測試程式碼寫出後，由 `Execute` 階段強勢發動終端機運行。若亮紅燈，防護決策迴圈的 `Validation` 將不屈不撓地退回修復重構，直到見到綠燈。
+
+### 🚀 行為升級與協議 (Behavior Upgrade Target)
+1. **條件分流 (Conditional Branches)**：在沒有明確框架的情境下收到「幫我加測試」的指令，強制跳到 Clarification 分支，與使用者釐清要用 Jest, Pytest 還是 Mocha，絕不隨機安插。
+2. **強制驗證 (Mandatory Verify)**：產出測試碼後，強制校驗是否過度依賴非靜態假資料 (Mock Data) 或不可控的外部 API，若有則強制補齊 Stub/Mock 機制。
+3. **精準評估 (Check Tooling)**：動手前評估開發環境中是否具備所需的測試 Runner 庫。
+4. **全域常駐 (Pervasive Scope)**：處理任何涉及 TDD (測試驅動開發)、修補覆蓋率漏洞、重構脆弱模組的任務強制生效。
 
 ### 📋 建議模型
-- **推薦版本**：GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (擅長邏輯推演與邊界測試)
-- **最低版本**：GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5
+- **推薦版本**：Gemini 3.0 Pro / GPT-5.3 / Claude Sonnet 4.6
+- **最低版本**：Gemini 3.1 Flash / GPT-5.1

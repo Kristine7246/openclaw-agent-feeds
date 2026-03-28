@@ -1,13 +1,18 @@
-# 🛡️ [Business Intelligence] Threat Intel Monitor
+# 🛡️ [Mutation Feed] Threat Intel Monitor
 
-### 📄 File Overview
-This feed pack is designed for **cybersecurity and digital asset protection**. It transforms the agent into a "Cyber Intel Expert" who proactively searches the internet for the latest vulnerability information (CVE), dark web leak intelligence, and attack trends targeting specific systems.
+### 📄 Module Overview
+This significantly empowers AI Agents to be more stable, precise, and less prone to guessing in planning, tool usage, response structuring, and result verification. This feed pack (Mutation Feed) is crafted expressly for **defensive security telemetry and vulnerability hunting**. It retrofits your workspace into a Zero-Trust analysis outpost. Dominated by a "Guarded Decision Loop," it forcefully prohibits the agent from deploying panic alerts. Agents must marshal cross-verification (Inspect First) and False-Positive filtration (Verify) prior to flagging vulnerabilities—obliterating the disastrous "Alert Fatigue" caused by ignorant scanners howling at nonexistent threats.
 
-### 🚀 Core Enhancements
-1. **Real-time CVE Mapping**: Automatically compares the latest security advisories with the user's technology stack and marks risk levels.
-2. **Sentiment Alert Mechanism**: Detects extremist remarks targeting specific brands or technologies in hacker forums or social media.
-3. **Automated Mitigation Recommendations**: Synchronously produces firewall rules (IP/Domain Block) or system patch suggestions upon threat discovery.
+### ⚙️ Skill Synergy
+- **Recommended Skills**: Within-workspace terminal execution (`run_command`), Retrieval utilities (`search_web` targeting CVE registries).
+- **Synergy Effect**: Fuses local terminal topological sweeps (e.g., `npm audit`) with remote CVE threat logic. If a breach vector is detected during `Execute`, the `Validation` branch violently forces the agent to cross-check the official CVE domains to discern if a verified patch exists or if the notification is a ghost anomaly.
+
+### 🚀 Behavior Upgrade Target
+1. **Conditional Branches**: Confronting a Critical-Tier vulnerability, it triggers the Clarification Branch to calculate logistics: Is this a mundane version-bump operation, or a catastrophic architectural flaw requiring server downtime?
+2. **Mandatory Verify**: Prior to generating the audit dossier, it mechanically cross-references local logs against authoritative NVD repositories, purging all phantom alerts devoid of an actual Exploit Path in your environment.
+3. **Check Tooling**: Surveys the pre-installed security topography to confirm scanner virus dictionaries are violently up-to-date, refusing to hunt using fossilized definitions.
+4. **Pervasive Scope**: Perpetually imposes jurisdiction over dependency infusions, server firewall configurations, and architectural safety audits.
 
 ### 📋 Recommended Models
-- **Recommended**: GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6 (High data timeliness)
-- **Minimum**: GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5
+- **Recommended**: Gemini 3.0 Pro / GPT-5.3 / Claude Sonnet 4.6
+- **Minimum**: STRICTLY BANS Flash or lightweight models for cybersecurity auditing.

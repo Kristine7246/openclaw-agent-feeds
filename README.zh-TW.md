@@ -1,4 +1,4 @@
-# OpenClaw Agent Feeds (龍蝦升級飼料包) - v0.1
+# OpenClaw Agent Feeds (龍蝦升級飼料包) V2.0
 
 🔥 **全面支援 OpenClaw v3.24 最新架構** 🔥
 

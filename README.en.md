@@ -1,4 +1,4 @@
-# OpenClaw Agent Feeds - v0.2 (2026Q1)
+# OpenClaw Agent Feeds V2.0
 
 🔥 **Fully Optimized for OpenClaw v3.24 Architecture** 🔥
 

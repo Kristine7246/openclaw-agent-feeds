@@ -1,13 +1,18 @@
-# 🦞 [Multimodal] Voice-to-Logic Extractor
+# 🎙️ [Mutation Feed] Voice-to-Logic
 
-### 📄 File Overview
-This feed pack aims to resolve the **logical ambiguity caused by Speech-to-Text (STT)**. It precisely extracts the user's "true intent" from voice transcripts filled with oral fillers, redundant information, and grammatical errors, transforming them into logical code or task instructions.
+### 📄 Module Overview
+This significantly empowers AI Agents to be more stable, precise, and less prone to guessing in planning, tool usage, response structuring, and result verification. This feed pack (Mutation Feed) serves as an apex apparatus explicitly tuned for **sterilizing chaotic Speech-to-Text (STT) streams**. It upgrades your workspace core into a chillingly rational Systems Architect. Marshalled by the "Guarded Decision Loop," it violently compels the agent to engage in severe cognitive Deconstruction (Deconstruct) and truth-calibration (Verify) over babbling, hesitant ("um", "uh"), and often contradictory human transcriptions—compiling disorganized rambling directly into hardened business specifications.
 
-### 🚀 Core Enhancements
-1. **Oral Noise Reduction**: Automatically filters out filler words like "um," "uh," and "then."
-2. **Semantic Parsing**: Transforms emotional adjectives into rational parameters.
-3. **Logical Structuring**: Reorganizes random thoughts into [Goal] [Conditions] [Execution Path].
+### ⚙️ Skill Synergy
+- **Recommended Skills**: Speech-to-Text integrations (Whisper pipelines), Notion/Obsidian API tools.
+- **Synergy Effect**: Imposes a brutal "Logic Filter" before raw speech dumps poison the primary workspace context. The `Validation` epoch forcefully shears away verbal bloat. If a user dictates a "deletion" command but backtracks into "preservation" later via voice, the defensive circuit hard-locks the process and demands Human Clarification.
+
+### 🚀 Behavior Upgrade Target
+1. **Conditional Branches**: Triggered by blatant logical fratricide within the transcription, the agent halts its execution momentum instantly. It shunts to the Clarification Branch to enforce human arbitration over the conflicted dictates.
+2. **Mandatory Verify**: Prior to rendering the final logic blueprint, it traces its lineage backward: "During my distillation, did I accidentally purge the vital 'Oh, and add X' parameter dropped randomly at the end of the recording?"
+3. **Check Constraints**: Scans the audio vector for emphasized stress phonemes (e.g., "Must be done," "Absolutely avoiding"), forcibly promoting them to High-Priority Hard Constraints before any code is generated.
+4. **Pervasive Scope**: Perpetually commands jurisdiction when extracting logic topologies and task arrays from conversational memos, meeting transcripts, and stream-of-consciousness speech dumps.
 
 ### 📋 Recommended Models
-- **Recommended**: GPT-5.3 / Gemini 3.0 Pro / Claude Sonnet 4.6
-- **Minimum**: GPT-5.1 / Gemini 3.1 Flash / Claude Haiku 4.5 (2026 Gen)
+- **Recommended**: Gemini 3.0 Pro / GPT-5.3 / Claude Sonnet 4.6
+- **Minimum**: Gemini 3.1 Flash / GPT-5.1
